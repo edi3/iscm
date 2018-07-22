@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TradeSettlement</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>TradeSettlement</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-UMLClass"></span>
+          UMLClass
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='d2dd8b310ea0eea1767faa128a20408a.html'><span class='node-icon staruml-icon icon-UMLClass'></span>TradeSettlement</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <span class="label label-info">none</span>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+        
+        
+
+
+        
+        
+<section class="element-list">
+    <h3>Specialized Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='fe6344f28c33adaf647752a560ca3d1e.html'><span class='node-icon staruml-icon icon-UMLClass'></span>HeaderTradeSettlement</a></li>
+        
+        <li><a href='3c5c78553ec56681df6828796a8f9f74.html'><span class='node-icon staruml-icon icon-UMLClass'></span>LineTradeSettlement</a></li>
+        
+        <li><a href='832ebab41b4e9f32fc5058687713cf10.html'><span class='node-icon staruml-icon icon-UMLClass'></span>PaymentTradeSettlement</a></li>
+        
+        <li><a href='ff6962e6ac4f4cec0e3c0386bdccbda0.html'><span class='node-icon staruml-icon icon-UMLClass'></span>SubordinateLineTradeSettlement</a></li>
+        
+        <li><a href='ea657057950a7f52924134f8205fdaab.html'><span class='node-icon staruml-icon icon-UMLClass'></span>SupplyChainTradeSettlement</a></li>
+        
+    </ul>
+</section>
+
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+      <section>
+        <h3>Attributes</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="6bf2500c63b3ea13e9d2a00142c5d546.html">ApplicableTradeTax</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>A tax applicable to this subordinate line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="3c3a61097b88c9ed0ce7d3603e5174d6.html">PaymentReference</a></td>
+            <td>Text</td>
+            <td><p>A payment reference, expressed as text, for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="1fcb00e0e461bb42da1c4d2ef6ecf1fc.html">CalculatedTradeTax</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>A tax subtotal calculated for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="fdf02f2c6888dd827d8bd91ad647b863.html">PayerReference</a></td>
+            <td>Text</td>
+            <td><p>The payer reference, expressed as text, for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="aa5f2784262223702fea610b78da84f4.html">SpecifiedTradeAccountingAccount</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>A payable accounting account specified for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="44eb42310196cd090d1479d9be327dc3.html">SpecifiedTradeSettlementFinancialCard</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>A financial card specified in this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="e06df4efe9f8fa67f6f3da27a2565756.html">InvoiceeTradeParty</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>The party to whom an invoice is issued for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="a2c9eb1160407aff90727136a14def89.html">PayerTradeParty</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>The payer party for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="505bcf453279a1fa4accc23f7ddb3858.html">InvoiceIssuerReference</a></td>
+            <td>Text</td>
+            <td><p>The invoice issuer reference, expressed as text, for this line settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="c176bd5bb14075ddb53c6bd4c8bb48e2.html">SpecifiedLogisticsServiceCharge</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>A logistics service charge specified for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="d610cf35b6215802935c491dee8146ea.html">SpecifiedTradePaymentTerms</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>Payment terms specified for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="844aa042d614790c0a3a7aa96a1f5363.html">SpecifiedTradeAllowanceCharge</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>An allowance or charge specified for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="306d3c1297b56d8d865baa113e492a2b.html">SpecifiedFinancialAdjustment</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>A financial adjustment specified for this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="90a71ddd3a84b5ba9ab9f6899224a2f9.html">InvoiceReferencedDocument</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>The invoice document referenced in this line trade settlement.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5cbd699010aa97bc23e45d7e8dfe5025.html">BillingSpecifiedPeriod</a></td>
+            <td><span class='label label-info'>none</span></td>
+            <td><p>A billing period specified for this line trade settlement.</p></td>
+          </tr>
+          
+        </table>
+      </section>
+      
+
+      <!-- Operations -->
+
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>TradeSettlement</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>stereotype</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>visibility</td>
+        <td>public</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>isAbstract</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isFinalSpecialization</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isActive</td>
+        <td><span class='label label-info'>true</span></td>
+    </tr>
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='3baa8ddf83c205adc8dc7ef642c2114f.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(HeaderTradeSettlement→TradeSettlement)</a></li>
+        
+        <li><a href='bda811040a06983114099d2474a112e1.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(LineTradeSettlement→TradeSettlement)</a></li>
+        
+        <li><a href='cf2b4240ffd9664b123ca3e2e6c8e388.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(PaymentTradeSettlement→TradeSettlement)</a></li>
+        
+        <li><a href='fe38855a1e0bb4425fc916c15a7301f9.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(SubordinateLineTradeSettlement→TradeSettlement)</a></li>
+        
+        <li><a href='839b4940423972c35c1f56b13a67dd21.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(SupplyChainTradeSettlement→TradeSettlement)</a></li>
+        
+        <li><a href='6bf2500c63b3ea13e9d2a00142c5d546.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>ApplicableTradeTax (TradeSettlement—TradeTax)</a></li>
+        
+        <li><a href='1fcb00e0e461bb42da1c4d2ef6ecf1fc.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>CalculatedTradeTax (TradeSettlement—TradeTax)</a></li>
+        
+        <li><a href='aa5f2784262223702fea610b78da84f4.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>SpecifiedTradeAccountingAccount (TradeSettlement—AccountingAccount)</a></li>
+        
+        <li><a href='44eb42310196cd090d1479d9be327dc3.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>SpecifiedTradeSettlementFinancialCard (TradeSettlement—FinancialCard)</a></li>
+        
+        <li><a href='e06df4efe9f8fa67f6f3da27a2565756.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>InvoiceeTradeParty (TradeSettlement—Party)</a></li>
+        
+        <li><a href='a2c9eb1160407aff90727136a14def89.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>PayerTradeParty (TradeSettlement—Party)</a></li>
+        
+        <li><a href='c176bd5bb14075ddb53c6bd4c8bb48e2.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>SpecifiedLogisticsServiceCharge (TradeSettlement—ServiceCharge)</a></li>
+        
+        <li><a href='d610cf35b6215802935c491dee8146ea.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>SpecifiedTradePaymentTerms (TradeSettlement—PaymentTerms)</a></li>
+        
+        <li><a href='844aa042d614790c0a3a7aa96a1f5363.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>SpecifiedTradeAllowanceCharge (TradeSettlement—TradeAllowanceCharge)</a></li>
+        
+        <li><a href='306d3c1297b56d8d865baa113e492a2b.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>SpecifiedFinancialAdjustment (TradeSettlement—FinancialAdjustment)</a></li>
+        
+        <li><a href='90a71ddd3a84b5ba9ab9f6899224a2f9.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>InvoiceReferencedDocument (TradeSettlement—ReferencedDocument)</a></li>
+        
+        <li><a href='5cbd699010aa97bc23e45d7e8dfe5025.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>BillingSpecifiedPeriod (TradeSettlement—SpecifiedPeriod)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+
+
+    </div>
+  </body>
+</html>
