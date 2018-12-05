@@ -18,7 +18,7 @@
 						"$ref": "AAAAAAFkuj22oigOFaI="
 					},
 					"name": "Reference Data Model",
-					"documentation": "# UN/CEFACT International Supply Chain Refernece Model\n\nThe logical model presented here is a work product of the United National Centre For Trade Faciliation and Electronic Business [(UN/CEFACT)](https://www.unece.org/cefact/).\n\n## Trade Model\n\nA shipment is an identifiable collection of one or more trade items (available to be) transported together from the seller (original exporter) to the buyer (ultimate importer).\n\n* A shipment can only be destined for one Buyer.\n* A shipment can be made up of some or all trade items from one or more Sales Orders.\n* A shipment may for part or all of a consignment or may be transported in multiple consignments.\n\n## Transport Model\n\nA consignment is a separately identifiable set of consignment items (available to be) transported from one consignor to one consignee via one or more modes of transport as specified in one single transport service contractual document.\n\n* A consignment can only have one transport service buyer and one transport service provider.\n* A consignment can only have one consignor and one consignee.\n* The transport service buyer can be either the consignor or the consignee. \n* A consignment is made up of some or all trade items (aggregated into consignment items) from one or more shipments.\n\n## Regulatory Model\n\nRegulators (customs authorities and permit agencies) normally require reporting of trade and transport data as follows.\n\n* An import or export declaration can reference only one shipment and is lodged by (or on behalf of) the ultimate importer or exporter.\n* An import or export declaration contains one or more declaration details that describe the trade items in the shipment.\n* A cargo report describes one consignment, described by a bill of lading and lodged by the transport service provider. \n* Cargo reports are provided at both master level and at house level.  House level bills will reference one master level bill.\n",
+					"documentation": "# UN/CEFACT International Supply Chain Reference Model\n\nThe logical model presented here is a work product of the United National Centre For Trade Faciliation and Electronic Business [(UN/CEFACT)](https://www.unece.org/cefact/).\n\n## Trade Model\n\nA shipment is an identifiable collection of one or more trade items (available to be) transported together from the seller (original exporter) to the buyer (ultimate importer).\n\n* A shipment can only be destined for one Buyer.\n* A shipment can be made up of some or all trade items from one or more Sales Orders.\n* A shipment may for part or all of a consignment or may be transported in multiple consignments.\n\n## Transport Model\n\nA consignment is a separately identifiable set of consignment items (available to be) transported from one consignor to one consignee via one or more modes of transport as specified in one single transport service contractual document.\n\n* A consignment can only have one transport service buyer and one transport service provider.\n* A consignment can only have one consignor and one consignee.\n* The transport service buyer can be either the consignor or the consignee. \n* A consignment is made up of some or all trade items (aggregated into consignment items) from one or more shipments.\n\n## Regulatory Model\n\nRegulators (customs authorities and permit agencies) normally require reporting of trade and transport data as follows.\n\n* An import or export declaration can reference only one shipment and is lodged by (or on behalf of) the ultimate importer or exporter.\n* An import or export declaration contains one or more declaration details that describe the trade items in the shipment.\n* A cargo report describes one consignment, described by a bill of lading and lodged by the transport service provider. \n* Cargo reports are provided at both master level and at house level.  House level bills will reference one master level bill.\n",
 					"defaultDiagram": true,
 					"ownedViews": [
 						{
@@ -9964,6 +9964,7 @@
 								"$ref": "AAAAAAFkuj22lySpbXM="
 							},
 							"name": "bill_number",
+							"documentation": "Bill of lading number\n\nSIP: ShipmentRef",
 							"type": "string"
 						},
 						{
@@ -10856,7 +10857,7 @@
 						"$ref": "AAAAAAFkuj22oCeb5NI="
 					},
 					"name": "Sea Transport Data Model",
-					"documentation": "## Sea Transport Model\n\nThe sea transport model is a specialisation of the generalised refererence model where\n\n* Transport Means -> Vessel\n* Transport Movement -> Voyage\n* Transport Equipment -> Container\n* Consignment Item -> Container Transport",
+					"documentation": "## Sea Transport Model\n\nThe sea transport model is a specialisation of the generalised reference model where\n\n* Transport Means -> Vessel\n* Transport Movement -> Voyage\n* Transport Equipment -> Container\n* Consignment Item -> Container Transport\n\n",
 					"ownedViews": [
 						{
 							"_type": "UMLClassView",
@@ -15270,13 +15271,30 @@
 											"height": 13,
 											"text": "+mode: code",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFkwbyqdegtzdU=",
+											"_parent": {
+												"$ref": "AAAAAAFkuj22myXnjnE="
+											},
+											"model": {
+												"$ref": "AAAAAAFkwbyqIegVRoc="
+											},
+											"font": "Arial;13;0",
+											"left": 301,
+											"top": 674,
+											"width": 167,
+											"height": 13,
+											"text": "+location: locode",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 296,
 									"top": 609,
 									"width": 177,
-									"height": 68
+									"height": 83
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -15332,7 +15350,7 @@
 							"left": 296,
 							"top": 584,
 							"width": 177,
-							"height": 97,
+							"height": 108,
 							"nameCompartment": {
 								"$ref": "AAAAAAFkuj22myXi9Vg="
 							},
@@ -21140,6 +21158,15 @@
 							},
 							"name": "mode",
 							"type": "code"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFkwbyqIegVRoc=",
+							"_parent": {
+								"$ref": "AAAAAAFkuj22oCeai0E="
+							},
+							"name": "location",
+							"type": "locode"
 						}
 					]
 				}
@@ -23184,58 +23211,6 @@
 				},
 				{
 					"_type": "UMLClass",
-					"_id": "AAAAAAFkuj22oigFgxo=",
-					"_parent": {
-						"$ref": "AAAAAAFkuj22oigNGt4="
-					},
-					"name": "Railcar",
-					"ownedElements": [
-						{
-							"_type": "UMLGeneralization",
-							"_id": "AAAAAAFkuj22oigB4aw=",
-							"_parent": {
-								"$ref": "AAAAAAFkuj22oigFgxo="
-							},
-							"source": {
-								"$ref": "AAAAAAFkuj22oigFgxo="
-							},
-							"target": {
-								"$ref": "AAAAAAFkuj22lyTTYRI="
-							}
-						},
-						{
-							"_type": "UMLAssociation",
-							"_id": "AAAAAAFkuj22oigEH40=",
-							"_parent": {
-								"$ref": "AAAAAAFkuj22oigFgxo="
-							},
-							"end1": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAFkuj22oigCJp8=",
-								"_parent": {
-									"$ref": "AAAAAAFkuj22oigEH40="
-								},
-								"reference": {
-									"$ref": "AAAAAAFkuj22oigFgxo="
-								},
-								"multiplicity": "1..*"
-							},
-							"end2": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAFkuj22oigD2iE=",
-								"_parent": {
-									"$ref": "AAAAAAFkuj22oigEH40="
-								},
-								"reference": {
-									"$ref": "AAAAAAFkuj22oigH/SM="
-								},
-								"multiplicity": "1..*"
-							}
-						}
-					]
-				},
-				{
-					"_type": "UMLClass",
 					"_id": "AAAAAAFkuj22oigH/SM=",
 					"_parent": {
 						"$ref": "AAAAAAFkuj22oigNGt4="
@@ -23300,6 +23275,58 @@
 								"_id": "AAAAAAFkuj22oigKeTw=",
 								"_parent": {
 									"$ref": "AAAAAAFkuj22oigLpIE="
+								},
+								"reference": {
+									"$ref": "AAAAAAFkuj22oigH/SM="
+								},
+								"multiplicity": "1..*"
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFkuj22oigFgxo=",
+					"_parent": {
+						"$ref": "AAAAAAFkuj22oigNGt4="
+					},
+					"name": "Railcar",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFkuj22oigB4aw=",
+							"_parent": {
+								"$ref": "AAAAAAFkuj22oigFgxo="
+							},
+							"source": {
+								"$ref": "AAAAAAFkuj22oigFgxo="
+							},
+							"target": {
+								"$ref": "AAAAAAFkuj22lyTTYRI="
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFkuj22oigEH40=",
+							"_parent": {
+								"$ref": "AAAAAAFkuj22oigFgxo="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFkuj22oigCJp8=",
+								"_parent": {
+									"$ref": "AAAAAAFkuj22oigEH40="
+								},
+								"reference": {
+									"$ref": "AAAAAAFkuj22oigFgxo="
+								},
+								"multiplicity": "1..*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFkuj22oigD2iE=",
+								"_parent": {
+									"$ref": "AAAAAAFkuj22oigEH40="
 								},
 								"reference": {
 									"$ref": "AAAAAAFkuj22oigH/SM="
@@ -29882,8 +29909,7 @@
 							"type": "Code",
 							"multiplicity": "0..1"
 						}
-					],
-					"isActive": true
+					]
 				},
 				{
 					"_type": "UMLClass",
@@ -47877,6 +47903,14 @@
 					"isActive": true
 				}
 			]
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAFkxvfJFshGzEo=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Package1"
 		}
 	]
 }
